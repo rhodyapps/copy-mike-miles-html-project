@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+    This branch part11-css completes the building the css styling for the home page.
+    Css is added for: button_1, 'boxes', box image, footer. 
+    The CSS for the media queries is also in the style.css in this branch.
+  
+    This completes the CSS styling for the home page. Next he will go on to 
+    show how to create the other two pages for the website.
+
+     Video location 38:48 thru 43:32
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Mike Giles">
+    <title>Mike's Dog Breed Website | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+	  <header>
+      <div class="container">
+        <div id="branding">
+         <h1><span class="highlight">Mike's Website:</span> Dog Breeds</h1>
+        </div>	
+        <nav>
+         <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+         </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Dog Breeds</h1>
+        <!-- Dummy text is from www.lipsum.com -->
+        <p>This is some info on common dog breeds around the US</p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email...">
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+<!-- Adding in the Boxes section under the newsletter section 
+The boxes are in a container class and each box has it's own div
+
+We also add the images to the img folder
+
+-->
+
+    <section id="boxes">
+      <div class="container">
+        
+        <div class="box">
+          <img src="./img/GermanShepherd.png">
+          <h3>German Shepherd</h3>
+          <p>This is a page about German Shepherds.</p>
+        </div>
+
+        <div class="box">
+          <img src="./img/Bulldog.png">
+          <h3>Bulldog</h3>
+          <p>This is a page about Bulldogs.</p>
+        </div>
+
+        <div class="box">
+          <img src="./img/BoxerDog.png">
+          <h3>Boxer</h3>
+          <p>This is a page about Boxers.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>Mike's Dog Breed Website, Copyright &copy; 2024</p>
+    </footer>
+
+  </body>
+</html>
